@@ -1,0 +1,7 @@
+apiVersion: v2
+version: 1.0.0
+appVersion: "1.120.2"
+name: n8n
+maintainers:
+  - name: cuongnlt
+    email: cuongnguyenletuan@gmail.com
