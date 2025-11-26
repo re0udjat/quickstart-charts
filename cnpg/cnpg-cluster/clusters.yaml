@@ -6,11 +6,18 @@ metadata:
 spec:
   imageName: ghcr.io/cloudnative-pg/postgresql:18
   instances: 1
+  # -- Set password for postgres user
+  superuserSecret:
+    name: superuser-secret
   bootstrap:
+    # -- Initialize a new PostgreSQL cluster
     initdb:
-      database: postgres
+      database: app
       owner: admin
       secret:
-        name: postgresql-secret
+        name: app-secret
+  postgresql:
+    pg_ident:
+      - local postgres admin
   storage:
     size: 5Gi
