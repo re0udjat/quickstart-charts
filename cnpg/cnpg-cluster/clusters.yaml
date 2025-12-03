@@ -13,7 +13,7 @@ spec:
   bootstrap:
     # -- Initialize a new PostgreSQL cluster
     initdb:
-      database: app
+      database: vault
       owner: admin
       secret:
         name: app-secret
