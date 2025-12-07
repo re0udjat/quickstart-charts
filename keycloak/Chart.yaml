@@ -1,0 +1,7 @@
+apiVersion: v2
+version: 1.0.0
+appVersion: "26.4.7"
+name: keycloak
+maintainers:
+  - name: cuongnlt
+    email: cuongnguyenletuan@gmail.com
